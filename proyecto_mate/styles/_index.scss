@@ -1,0 +1,77 @@
+//background Vegas, pero con modificación GFC de filtro
+.body.vegas-container > .vegas-overlay, body.vegas-container > .vegas-slide, body.vegas-container > .vegas-timer{
+    filter: sepia(50%);
+}
+
+//main - titulo y pasos para preparación de mate
+main{
+
+    padding: 10px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-image: linear-gradient(to right, $color3, $color1, $color3);
+    opacity: 0.8;
+    text-align: center;
+    
+
+    h1{
+        // font: $font1;
+        font-family: 'Prata', serif;
+        font-size: 70px;
+        color: white;
+         //background-color: $color1;
+        background-image: linear-gradient(to right, $color4, $color1, $color4);
+        opacity: 0.6;
+        text-align: center;
+    }
+    
+    ul{
+        text-align:left;
+    }
+
+}
+
+// contenedor de registro de usuario y juego
+section{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    div{
+        
+        margin: 15px;
+        padding: 30px;
+        font-family: 'Prata', serif;
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        background-image: linear-gradient(to right, $color4, $color1, $color4);
+        opacity: 0.8;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        div{
+           // border : 1px solid black;
+            background-image: linear-gradient(to right, $color3, $color1, $color3);
+            opacity: 0.8;
+        }
+        #btnEnviar{
+            width: auto;
+            height: 100px;
+            font-family: 'Prata', serif;
+            font-size: 20px;
+            color: $color1;
+            //background-color: white;
+            //opacity: 0.4;
+            //border: 2px $color1 solid;
+            align-self: center;
+        }
+        #btnEnviar:hover{
+            box-shadow: 0 2px 4px 0 $color2, 0 2px 4px 0 $color2;
+            
+        } 
+    }
+}
