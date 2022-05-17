@@ -1,0 +1,68 @@
+.body.vegas-container > .vegas-overlay, body.vegas-container > .vegas-slide, body.vegas-container > .vegas-timer{
+    filter: sepia(50%);
+}
+
+
+button{
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    color: white;
+    background-image: linear-gradient(to right, $color4, $color1, $color4);
+    opacity: 0.6;
+    border: 3px white solid;
+    padding: 5px;
+    margin-top: 20%;
+    margin-left: 45%;
+
+
+}
+button:hover{
+    box-shadow: 0 8px 20px 0 $color5, 0 6px 20px 0 $color5;
+}  
+
+main{
+
+    padding: 10px;
+    font-family: 'Prata', serif;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to right, $color3, $color1, $color3);
+    opacity: 0.8;
+    text-align: center;
+
+    h1{
+        // font: $font1;
+        font-family: 'Prata', serif;
+        font-size: 70px;
+        color: white;
+         //background-color: $color1;
+        background-image: linear-gradient(to right, $color4, $color1, $color4);
+        opacity: 0.6;
+        text-align: center;
+    }
+
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+
+    div{
+        margin: 15px;
+        padding: 30px;
+        font-family: 'Prata', serif;
+        font-size: 18px;
+        color: white;
+        background-image: linear-gradient(to right, $color4, $color1, $color4);
+        opacity: 0.7;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        div{
+           // border : 1px solid black;
+            background-image: linear-gradient(to right, $color3, $color1, $color3);
+            opacity: 0.8;
+        }
+    
+    }
+}
