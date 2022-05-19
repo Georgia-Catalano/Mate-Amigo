@@ -39,7 +39,10 @@ obtenerLocalStorage()
 const btnEnviar= document.getElementById("btnEnviar");
 
 // Agrego un evento en el que le digo que traiga toda la informacion que complete en el formulario mediante el botonEnviar CON FUNCION FLECHA
-
+// opcion B de hacerlo (Luis 19.05)
+/* 
+    const formUno= document.getElementById("formulariojuego")
+    formUno.addEventListener("submit",(e)=>{ */
 btnEnviar.addEventListener("click", (e)=> {
     e.preventDefault()
 //Guardo en variables los campos del html que me van a devolver los valores que necesito. Los asigno mediante el id que los identifica.
