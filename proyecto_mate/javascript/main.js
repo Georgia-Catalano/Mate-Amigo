@@ -120,6 +120,56 @@ function obtenerLocalStorage(){
 }
 
 
+//IMPLEMENTACION DE FETCH Y INCORPORAR ELEMENTOS AL DOM
+
+const btnSolucion= document.getElementById("btnEnviar");
+
+btnSolucion.addEventListener("mouseover", (e)=> {
+
+
+
+const lista = document.querySelector('#solucion')
+
+fetch('/javascript/data.json')
+    .then( (res) => res.json())
+    .then( (data) => {
+
+        data.forEach((respuestas) => {
+            const li = document.createElement('li')
+            li.innerHTML = `
+                <h4>${respuestas.nombre}</h4>
+                <p>${respuestas.temperatura}</p>
+                <hr/>
+            `
+            lista.append(li)
+        })
+    })
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
